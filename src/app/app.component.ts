@@ -1,6 +1,11 @@
 import { Component } from '@angular/core';
 import { WikipediaService } from './wikipedia.service';
 
+interface Page {
+  title: string;
+  wordcount: number;
+  snippet: string;
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
